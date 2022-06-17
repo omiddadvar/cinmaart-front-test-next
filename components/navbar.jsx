@@ -2,7 +2,8 @@ import React , {useState} from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import styles from '../styles/components/Navbar.module.css'
 
-const Navbar = () => {
+const Navbar = () => 
+{
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className={styles.omid__navbar}>
@@ -28,7 +29,8 @@ const Navbar = () => {
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
-        <div className={[styles.omid__navbar_menu_container,styles.scale_up_center]}>
+        // <div className={[styles.omid__navbar_menu_container,styles.scale_up_center]}>
+        <div className={`${styles.omid__navbar_menu_container} ${styles.scale_up_center}`}>
           <div className={styles.omid__navbar_menu_container_links}>
           <p><a href="#home">Home</a></p>
           <p><a href="#movies">Movies</a></p>

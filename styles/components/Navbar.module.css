@@ -127,11 +127,11 @@
     .omid__navbar_sign input{
         display: none;
     }
-    .omid__navbar_menu_container_links-sign{
+    .omid__navbar_menu_container_links_sign{
         display: block;
     }    
-    .omid__navbar_menu_container_links-sign p,
-    .omid__navbar_menu_container_links-sign button{
+    .omid__navbar_menu_container_links_sign p,
+    .omid__navbar_menu_container_links_sign button{
         display: none;
     }
 }
@@ -157,3 +157,29 @@
         display: block;
     }
 }
+/*------------------------------------------------*/
+.scale_up_center {
+	-webkit-animation: scale_up_center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale_up_center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale_up_center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+@keyframes scale_up_center {
+    0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+  
