@@ -1,4 +1,4 @@
-.omid__navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,36 +6,37 @@
     padding: 2rem 6rem;
 }
 
-.omid__navbar_links {
+.navbar_links {
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.omid__navbar_links_logo {
+.navbar_links_logo {
     margin-right: 2rem;
 }
 
-.omid__navbar_links_logo img {
+.navbar_links_logo img {
     width: 62.56px;
     height: 16.02px;
 }
 
-.omid__navbar_links_container {
+.navbar_links_container {
+    z-index: 999;
     display: flex;
     flex-direction: row;
 }
 
-.omid__navbar_sign {
+.navbar_sign {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.omid__navbar_links_container p,
-.omid__navbar_sign p,
-.omid__navbar_menu_container p {
+.navbar_links_container p,
+.navbar_sign p,
+.navbar_menu_container p {
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
@@ -47,8 +48,8 @@
     cursor: pointer;
 }
 
-.omid__navbar_sign button,
-.omid__navbar_menu_container button {
+.navbar_sign button,
+.navbar_menu_container button {
     padding: 0.5rem 1rem;
     color: #fff;
     background: #FF4820;
@@ -62,18 +63,18 @@
     border-radius: 5px;
 }
 
-.omid__navbar_menu {
+.navbar_menu {
     margin-left: 1rem;
 
     display: none;
     position: relative;
 }
 
-.omid__navbar_menu svg {
+.navbar_menu svg {
     cursor: pointer;
 }
 
-.omid__navbar_menu_container {
+.navbar_menu_container {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -91,18 +92,18 @@
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
 }
 
-.omid__navbar_menu_container p {
+.navbar_menu_container p {
     margin: 1rem 0;
 }
-.omid__navbar_menu_container_links{
+.navbar_menu_container_links{
     align-self: flex-start;
 }
-.omid__navbar_menu_container_links_sign {
+.navbar_menu_container_links_sign {
     display: none;
     align-self: flex-start;
 }
-.omid__navbar_sign input,
-.omid__navbar_menu_container input {
+.navbar_sign input,
+.navbar_menu_container input {
     min-width: 150px;
     height: 30px;
     text-align: center;
@@ -112,48 +113,48 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .omid__navbar_links_container {
+    .navbar_links_container {
         display: none;
     }
-    .omid__navbar_menu {
+    .navbar_menu {
         display: flex;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .omid__navbar {
+    .navbar {
         padding: 2rem 4rem;
     }
-    .omid__navbar_sign input{
+    .navbar_sign input{
         display: none;
     }
-    .omid__navbar_menu_container_links_sign{
+    .navbar_menu_container_links_sign{
         display: block;
     }    
-    .omid__navbar_menu_container_links_sign p,
-    .omid__navbar_menu_container_links_sign button{
+    .navbar_menu_container_links_sign p,
+    .navbar_menu_container_links_sign button{
         display: none;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .omid__navbar {
+    .navbar {
         padding: 2rem;
     }
 
-    .omid__navbar_sign {
+    .navbar_sign {
         display: none;
     }
 
-    .omid__navbar_menu_container {
+    .navbar_menu_container {
         top: 20px;
     }
 
-    .omid__navbar_menu_container_links_sign {
+    .navbar_menu_container_links_sign {
         display: block;
     }
-    .omid__navbar_menu_container_links_sign p,
-    .omid__navbar_menu_container_links_sign button{
+    .navbar_menu_container_links_sign p,
+    .navbar_menu_container_links_sign button{
         display: block;
     }
 }

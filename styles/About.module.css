@@ -1,4 +1,9 @@
-.about_background {
-    background-color: aqua;
-    text-shadow: 10px;
-}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 2rem;
+    font-size: 50px;
+  }
