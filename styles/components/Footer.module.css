@@ -1,13 +1,13 @@
 .footer {
-    z-index: -1;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
 
     background: var(--color-footer);
-
-    position: fixed;
+    
     left: 0;
     bottom: 0;
     width: 100%;
@@ -111,7 +111,10 @@
     .footer_links div {
         margin: 0.5rem 0;
     }
-
+    .footer_links_div p {
+        margin-left: 1rem;
+        cursor: pointer;
+    }
     .footer_btn p {
         font-size: 14px;
         /* line-height: 20px; */

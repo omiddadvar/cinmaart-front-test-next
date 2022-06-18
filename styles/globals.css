@@ -46,3 +46,13 @@ a {
   /* global 92%+ browsers support */
   background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 }
+.Main_Container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.Children_container{
+  z-index: 1;
+  flex: 1;
+  align-self: stretch;
+}

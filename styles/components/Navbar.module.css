@@ -118,6 +118,7 @@
     }
     .navbar_menu {
         display: flex;
+        z-index: 100;
     }
 }
 
