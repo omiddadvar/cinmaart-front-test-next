@@ -17,7 +17,7 @@ const Navbar = () =>
           <p><Link href="/movies">Movies</Link></p>
           <p><Link href="/tvseries">TV Series</Link></p>
           <p><Link href="/contactus">Contact Us</Link></p>
-          <p><Link href="/about">About Us</Link></p>
+          <p><Link href="/aboutus">About Us</Link></p>
         </div>
       </div>
       <div className={styles.navbar_sign}>
@@ -37,7 +37,7 @@ const Navbar = () =>
           <p><Link href="/movies">Movies</Link></p>
           <p><Link href="/tvseries">TV Series</Link></p>
           <p><Link href="/contactus">Contact Us</Link></p>
-          <p><Link href="/about">About Us</Link></p>
+          <p><Link href="/aboutus">About Us</Link></p>
           </div>
           <div className={styles.navbar_menu_container_links_sign}>    
             <input maxLength={25} type="text" placeholder='Search'/>
