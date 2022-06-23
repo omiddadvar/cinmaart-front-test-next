@@ -103,6 +103,7 @@
 .footer_copyright p {
     font-size: 12px;
     font-family: var(--font-family);
+    margin-bottom: 0.2rem;
     /* line-height: 15px; */
     color: #fff;
 }

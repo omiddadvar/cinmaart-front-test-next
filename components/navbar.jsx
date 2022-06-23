@@ -31,7 +31,8 @@ const Navbar = () =>
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu && (
         <div className={`${styles.navbar_menu_container} ${styles.scale_up_center}`}>
-          <div className={styles.navbar_menu_container_links}>
+          <div className={styles.navbar_menu_container_links} 
+                onClick={() => setToggleMenu(false)}>
           <p><Link href="/">Home</Link></p>
           <p><Link href="/movies">Movies</Link></p>
           <p><Link href="/tvseries">TV Series</Link></p>
