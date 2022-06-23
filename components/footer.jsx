@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className={styles.footer_links_div}>
           <h4>Get in touch</h4>
-          <p>+98-021-88463646</p>
+          <p>+98-21-88463646</p>
           <p>info@cinamaart.ir</p>
           <p>t.me/cinamaart-support</p>
         </div>
