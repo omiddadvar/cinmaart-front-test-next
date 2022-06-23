@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import Link from 'next/link';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import styles from '../styles/components/Navbar.module.css'
 
@@ -12,11 +13,11 @@ const Navbar = () =>
           {/* <img src={logo} /> */}
         </div>
         <div className={styles.navbar_links_container}>
-          <p><a href="#home">Home</a></p>
-          <p><a href="#movies">Movies</a></p>
-          <p><a href="#tvseries">TV Series</a></p>
-          <p><a href="#contactus">Contact Us</a></p>
-          <p><a href="#abouttus">About Us</a></p>
+          <p><Link href="/">Home</Link></p>
+          <p><Link href="/movies">Movies</Link></p>
+          <p><Link href="/tvseries">TV Series</Link></p>
+          <p><Link href="/contactus">Contact Us</Link></p>
+          <p><Link href="/about">About Us</Link></p>
         </div>
       </div>
       <div className={styles.navbar_sign}>
@@ -31,11 +32,11 @@ const Navbar = () =>
         {toggleMenu && (
         <div className={`${styles.navbar_menu_container} ${styles.scale_up_center}`}>
           <div className={styles.navbar_menu_container_links}>
-          <p><a href="#home">Home</a></p>
-          <p><a href="#movies">Movies</a></p>
-          <p><a href="#tvseries">TV Series</a></p>
-          <p><a href="#contactus">Contact Us</a></p>
-          <p><a href="#abouttus">About Us</a></p>
+          <p><Link href="/">Home</Link></p>
+          <p><Link href="/movies">Movies</Link></p>
+          <p><Link href="/tvseries">TV Series</Link></p>
+          <p><Link href="/contactus">Contact Us</Link></p>
+          <p><Link href="/about">About Us</Link></p>
           </div>
           <div className={styles.navbar_menu_container_links_sign}>    
             <input maxLength={25} type="text" placeholder='Search'/>

@@ -8,13 +8,13 @@ const Card = (props) => {
             <h2>{props.title}</h2>
         </div>
         <div className={styles.Card_image}>
-
+          
         </div>
         <div className={styles.Card_Content}>
             <p>{props.content}</p>
         </div>
         <div className={styles.Card_Actions}>
-
+            
         </div>
     </div>
   )
