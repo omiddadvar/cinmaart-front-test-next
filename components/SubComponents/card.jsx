@@ -10,9 +10,7 @@ const Card = (props) => {
         </div>
         <div className={styles.Card_image}>
           <img 
-              src={props.url} 
-              width={195} 
-              height={200}
+              src={props.url}
           />
         </div>
         <div className={styles.Card_Content}>

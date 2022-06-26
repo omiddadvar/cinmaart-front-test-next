@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import styles from '../styles/components/Navbar.module.css'
@@ -6,6 +7,13 @@ import styles from '../styles/components/Navbar.module.css'
 const Navbar = () => 
 {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const router = useRouter()
+  const SearchKeyPress = (e) => {
+    if(e.keyCode !== 13) return;
+    alert(e.target.value)
+    router.push('/search')
+    e.target.value = ""
+  }
   return (
     <div className={styles.navbar}>
       <div className={styles.navbar_links}>
@@ -21,7 +29,7 @@ const Navbar = () =>
         </div>
       </div>
       <div className={styles.navbar_sign}>
-        <input maxLength={25} type="text" placeholder='Search'/>
+        <input maxLength={25} type="text" placeholder='Search' onKeyDown={SearchKeyPress}/>
         <p>Sign in</p>
         <button type="button">Sign up</button>
       </div>
@@ -40,7 +48,7 @@ const Navbar = () =>
           <p><Link href="/aboutus">About Us</Link></p>
           </div>
           <div className={styles.navbar_menu_container_links_sign}>    
-            <input maxLength={25} type="text" placeholder='Search'/>
+            <input maxLength={25} type="text" placeholder='Search' onKeyDown={SearchKeyPress}/>
             <p>Sign in</p>
             <button type="button">Sign up</button>
           </div>

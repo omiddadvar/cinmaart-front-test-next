@@ -1,6 +1,7 @@
 .Card_container{
     display: flex;
     flex-direction: column;
+    margin: 2rem;
     width: 200px;
     height: 300px;
     border: 1px solid white;
@@ -28,6 +29,10 @@
 .Card_image{
     height: 200px;
 }
+.Card_image img{
+    height: 200px;
+    width: 195px;
+}
 .Card_Content{
     height: 30px;
     width : 200px;
@@ -47,10 +52,4 @@
 }
 .Card_Icon{
     background-color: aqua;
-}
-@media screen and (max-width: 550px) {
-    .Card_container{
-        width: 150px;
-        height: 250px;
-    }
 }
