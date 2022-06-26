@@ -20,6 +20,6 @@
   }
   
   .container a:hover:not(.active) {
-      background-color: steelblue;
+      background-color: darkblue;
         border-radius : 50%;
   }

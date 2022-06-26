@@ -13,6 +13,7 @@ const Navbar = () =>
     alert(e.target.value)
     router.push('/search')
     e.target.value = ""
+    setToggleMenu(false)
   }
   return (
     <div className={styles.navbar}>
