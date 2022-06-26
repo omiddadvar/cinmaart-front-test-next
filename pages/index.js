@@ -12,11 +12,11 @@ export default function Home() {
       {
         dataLatest.map((item , index) => (
           <Card key={index}
-                      title={item.title}
-                      content={item.content}
-                      url={item.url}
-                      onClick={() => alert(item.title)}
-                      />
+                title={item.title}
+                content={item.content}
+                url={item.url}
+                onClick={() => alert(item.title)}
+                />
         )) 
       }
     </div>
