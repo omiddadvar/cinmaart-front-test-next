@@ -13,12 +13,12 @@ export default function Home() {
       <div className={styles.Grid_container}>
       {
             JsonData.latest.map((item , index) => (
-            <Card key={index}
+              <Card key={index}
                     title={item.title}
                     content={item.content}
                     url={item.url}
                     onClick={() => alert(item.title)}
-                    />
+              />
             )) 
         }
       </div>
@@ -28,12 +28,12 @@ export default function Home() {
       <div className={styles.Grid_container}>
       {
             JsonData.popular.map((item , index) => (
-            <Card key={index}
+              <Card key={index}
                     title={item.title}
                     content={item.content}
                     url={item.url}
                     onClick={() => alert(item.title)}
-                    />
+              />
             )) 
         }
       </div>
