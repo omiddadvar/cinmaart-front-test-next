@@ -17,6 +17,7 @@ const Footer = () => {
         </div>
         <div className={styles.footer_links_div}>
           <h4>Company</h4>
+          
           <p>Terms &amp; Conditions </p>
           <p>Privacy Policy</p>
           <p>Contact</p>
