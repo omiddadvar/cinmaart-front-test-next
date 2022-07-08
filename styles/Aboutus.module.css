@@ -1,9 +1,7 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: aliceblue;
-    margin-top: 2rem;
-    font-size: 50px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  height: 100%;
+}
