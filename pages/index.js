@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { Card } from '../components/SubComponents' 
 import JsonData from '../pages/api/data/homeData.json'
@@ -7,6 +8,10 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Cinamaart | Home</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className={styles.Grid_header}>
         Latest movies in the world
       </div>

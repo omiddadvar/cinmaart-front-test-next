@@ -1,13 +1,17 @@
 import React from 'react'
+import Head from 'next/head'
 import styles from '../styles/Aboutus.module.css'
 import { ProfileCard } from '../components/SubComponents'
 import omidPic from '../assets/omidProfile.jpg'
 import essiPic from '../assets/essiProfile.jpg'
 
 const About = () => {
-  console.log("omidPic",omidPic)
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Cinamaart | AboutUs</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h1>About Us</h1>
       <div className={styles.line}/>
       <div className={styles.card_container}>
