@@ -3,7 +3,16 @@ import { Card , Pagination} from '../components/SubComponents'
 import { useEffect, useState } from 'react'
 import JsonData from '../pages/api/data/SearchData.json'
 
-const Search = () => {
+export const getStaticProps = async () => {
+  return {
+    props : { 
+      data : JsonData
+    }
+  }
+}
+
+const Search = ({data}) => {
+  console.log("data : " , data)
   return (
     <div className={styles.container}>
         <div className={styles.Grid_container}>
