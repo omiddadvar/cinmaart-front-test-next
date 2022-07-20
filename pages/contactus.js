@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import styles from '../styles/Contactus.module.css'
+import styles from '../styles/Form.module.css'
 
 const ContactUs = () => {
   return (
@@ -9,7 +9,21 @@ const ContactUs = () => {
         <title>Cinamaart | ContactUs</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <h1>Contact Us</h1>
+      <div className={styles.Form_container}>
+        <h2>ContactUs</h2>
+        <form className={styles.Form} 
+              onSubmit={(e) => e.preventDefault()}>
+          <label for="name">Name *</label>
+          <input type="text" name="name" required/>
+          <label for="email">Email *</label>
+          <input type="text" name="email" required/>
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone"/>
+          <label for="text">Message *</label>
+          <textarea type="text" name="text" rows={3} maxLength={200} required/>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   )
 }

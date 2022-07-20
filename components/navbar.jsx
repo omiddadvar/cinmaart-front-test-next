@@ -15,6 +15,9 @@ const Navbar = () =>
     e.target.value = ""
     setToggleMenu(false)
   }
+  const NavigateToSignUp = (e) => {
+    router.push('/signup')
+  }
   return (
     <div className={styles.navbar}>
       <div className={styles.navbar_links}>
@@ -31,8 +34,8 @@ const Navbar = () =>
       </div>
       <div className={styles.navbar_sign}>
         <input maxLength={25} type="text" placeholder='Search' onKeyDown={SearchKeyPress}/>
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <p><Link href="/signin">Sign in</Link></p>
+        <button onClick={NavigateToSignUp} type="button">Sign up</button>
       </div>
       <div className={styles.navbar_menu}>
         {toggleMenu
@@ -50,8 +53,8 @@ const Navbar = () =>
           </div>
           <div className={styles.navbar_menu_container_links_sign}>    
             <input maxLength={25} type="text" placeholder='Search' onKeyDown={SearchKeyPress}/>
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
+            <p><Link href="/signin">Sign in</Link></p>
+            <button onClick={NavigateToSignUp} type="button">Sign up</button>
           </div>
         </div>
         )}
