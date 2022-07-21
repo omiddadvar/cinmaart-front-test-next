@@ -2,6 +2,7 @@ import React , {useEffect , useState} from 'react'
 import {useRouter} from 'next/router'
 import styles from '../../styles/MoviesDetails.module.css'
 import detailsData from '../api/data/detailsData.json'
+import {BaseTable} from '../../components/SubComponents'
 
 const moviesDetails = () => {
     const router = useRouter()
@@ -17,6 +18,10 @@ const moviesDetails = () => {
       {
         title : "Author",
         key : "author"
+      },
+      {
+        title : "Link",
+        key : "link"
       }
     ];
     return (
@@ -31,6 +36,10 @@ const moviesDetails = () => {
             <div className={styles.moviesDetail_Description}>
               <h2>{selectedItem.title}</h2>
               <p>{selectedItem.content}</p>
+              <BaseTable 
+                Header={tableHeader}
+                Data={selectedItem.subtitles}
+              />
             </div>  
           </div>
         : <h2> 204 | Item Not Found </h2> 
