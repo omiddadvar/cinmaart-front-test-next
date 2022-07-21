@@ -10,9 +10,9 @@ const SignUp = () => {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <div className={styles.Form_container}>
+            <h2>SignUp</h2>
             <form className={styles.Form}
                   onSubmit={(e) => e.preventDefault()} >
-                <h2>SignUp</h2>
                 <label for="username">Username *</label>
                 <input type="text" name="username" required/>
                 <label for="email">Email *</label>

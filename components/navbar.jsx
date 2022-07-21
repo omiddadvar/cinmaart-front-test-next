@@ -8,15 +8,19 @@ const Navbar = () =>
 {
   const [toggleMenu, setToggleMenu] = useState(false);
   const router = useRouter()
-  const SearchKeyPress = (e) => {
+  
+  const SearchKeyPress = (e) => 
+  {
     if(e.keyCode !== 13) return;
     alert(e.target.value)
     router.push('/search')
     e.target.value = ""
     setToggleMenu(false)
   }
-  const NavigateToSignUp = (e) => {
-    router.push('/signup')
+  const NavigateToSignUp = (e) => 
+  {
+    setToggleMenu(false);
+    router.push('/signup');
   }
   return (
     <div className={styles.navbar}>
@@ -53,7 +57,9 @@ const Navbar = () =>
           </div>
           <div className={styles.navbar_menu_container_links_sign}>    
             <input maxLength={25} type="text" placeholder='Search' onKeyDown={SearchKeyPress}/>
-            <p><Link href="/signin">Sign in</Link></p>
+            <p onClick={() => setToggleMenu(false)}>
+              <Link href="/signin">Sign in</Link>
+            </p>
             <button onClick={NavigateToSignUp} type="button">Sign up</button>
           </div>
         </div>

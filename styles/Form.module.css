@@ -41,6 +41,7 @@
     margin: 0.2rem 0;
     font-size: 12pt;
     border-radius: 10px;
+    text-indent: 10px;
 }
 .Form > button {
     width: 80%;
@@ -63,5 +64,8 @@
 @media screen and (max-width: 550px) {
     .Form{
         width: 80vw;
+    }
+    .Form_container > h2 {
+        margin : 1rem 0 1.5rem;
     }
 }

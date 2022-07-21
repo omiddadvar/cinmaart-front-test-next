@@ -3,6 +3,7 @@ import { Card , Pagination} from '../components/SubComponents'
 import { useEffect, useState } from 'react'
 import JsonData from '../pages/api/data/SearchData.json'
 import Head from 'next/head'
+import { useRouter } from 'next/router';
 export const getStaticProps = async () => {
   return {
     props : { 
@@ -10,8 +11,10 @@ export const getStaticProps = async () => {
     }
   }
 }
-
 const Search = ({data , isOnlySearch = true}) => {
+  const router = useRouter()
+  const GoToDetails = (id) => router.push('/movie/' + id)
+  
   return (
     <div className={styles.container}>
       { isOnlySearch &&
@@ -27,7 +30,7 @@ const Search = ({data , isOnlySearch = true}) => {
                     title={item.title}
                     content={item.content}
                     url={item.url}
-                    onClick={() => alert(item.title)}
+                    onClick={() => GoToDetails(item.movieId)}
                     />
             )) 
         }

@@ -3,9 +3,12 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { Card } from '../components/SubComponents' 
 import JsonData from '../pages/api/data/homeData.json'
+import { useRouter } from 'next/router';
 
 export default function Home() {
-
+  const router = useRouter()
+  const GoToDetails = (id) => router.push('/movie/' + id)
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -22,7 +25,7 @@ export default function Home() {
                     title={item.title}
                     content={item.content}
                     url={item.url}
-                    onClick={() => alert(item.title)}
+                    onClick={() => GoToDetails(item.movieId)}
               />
             )) 
         }
@@ -37,7 +40,7 @@ export default function Home() {
                     title={item.title}
                     content={item.content}
                     url={item.url}
-                    onClick={() => alert(item.title)}
+                    onClick={() => GoToDetails(item.movieId)}
               />
             )) 
         }
