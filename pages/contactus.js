@@ -13,13 +13,13 @@ const ContactUs = () => {
         <h2>ContactUs</h2>
         <form className={styles.Form} 
               onSubmit={(e) => e.preventDefault()}>
-          <label for="name">Name *</label>
+          <label htmlFor="name">Name *</label>
           <input type="text" name="name" required/>
-          <label for="email">Email *</label>
+          <label htmlFor="email">Email *</label>
           <input type="text" name="email" required/>
-          <label for="phone">Phone Number</label>
+          <label htmlFor="phone">Phone Number</label>
           <input type="text" name="phone"/>
-          <label for="text">Message *</label>
+          <label htmlFor="text">Message *</label>
           <textarea type="text" name="text" rows={3} maxLength={200} required/>
           <button type="submit">Submit</button>
         </form>

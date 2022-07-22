@@ -20,6 +20,10 @@
     font-size: 10pt;
     text-indent: 1rem;
     
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .Container > table > tbody > tr > td > a{
     background-color: orangered;

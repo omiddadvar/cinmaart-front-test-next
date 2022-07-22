@@ -2,7 +2,7 @@ import React , {useEffect , useState} from 'react'
 import {useRouter} from 'next/router'
 import styles from '../../styles/MoviesDetails.module.css'
 import detailsData from '../api/data/detailsData.json'
-import {BaseTable} from '../../components/SubComponents'
+import {BaseTable , Pagination} from '../../components/SubComponents'
 
 const moviesDetails = () => {
     const router = useRouter()
@@ -40,6 +40,7 @@ const moviesDetails = () => {
                 Header={tableHeader}
                 Data={selectedItem.subtitles}
               />
+              <Pagination/>
             </div>  
           </div>
         : <h2> 204 | Item Not Found </h2> 

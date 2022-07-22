@@ -13,11 +13,11 @@ const SignIn = () => {
             <h2>SignIn</h2>
             <form className={styles.Form} 
                   onSubmit={(e) => e.preventDefault()}>
-                <label for="username">Username / Email</label>
+                <label htmlFor="username">Username / Email</label>
                 <input type="text" name="username" required/>
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <input type="password" name="password" required/>
-                <button type="submit">Sign-in</button>
+                <button type="submit">Login</button>
             </form>
         </div>
     </div>
